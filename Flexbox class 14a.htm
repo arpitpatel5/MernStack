@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | CSS layouts</title>
+    <!-- Flex Container Property
+    1. Display 
+    2. flex-direction
+    3. flex-wrap
+    4. flex-flow
+    5. justify-content  
+    6. align-items
+    7. align-content
+    8. gap = a. row-gap, b. column-gap -->
+    <style>
+/* for flex box we always need to target the parent class that is container */
+.container{
+    display: flex; /* Inline flex used for particular element and flex acquires the whole block*/ 
+    border: 2px solid black;
+    flex-direction: row; /*row, column, column-reverse */
+    flex-wrap:wrap; /* nowrap, wrap-reverse these are also sub property of flex-wrap */
+    justify-content:space-evenly ; /* justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly|initial|inherit; move to left to right(main axis) */
+    align-items:center ; /* top to bottom (cross axis) align-items: normal|stretch|positional alignment|flex-start|flex-end|baseline|initial|inherit; */
+    gap: 100px; /* row-gap , column-gap; */
+    flex-flow: flex direction flex wrap;
+
+
+  
+}
+
+         .box{ 
+              height: 100px;  
+             width: 100px; 
+          } 
+        .box1{
+        background-color:red;
+        }
+        .box2{
+            background-color: green;
+        }
+        .box3{ 
+            background-color: yellow;
+        }
+        .box4{
+            background-color: blue;
+        }
+        .box5{
+            background-color:aqua;
+        }
+        .box6{
+            background-color:gold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">BOX 1</div>
+        <div class="box box2">BOX 2</div>
+        <div class="box box3">BOX 3</div>
+        <div class="box box4">BOX 4</div>
+        <div class="box box5">BOX 5</div>
+        <div class="box box6">BOX 6</div>
+    </div>
+    
+</body>
+</html>

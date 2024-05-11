@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <!-- Animation styling in CSS -->
+    <style> 
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* animation-name: colorchange; 
+            position: relative;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: forwards;*/
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            
+
+        }
+        #ease{ animation-timing-function: ease;}
+        #Linear{ animation-timing-function: linear;}
+        #ease-in{
+            animation-timing-function: ease-in;
+        }
+        #ease-out{
+            animation-timing-function: ease-in-out;
+        }
+        
+        @keyframes colorchange{
+            /* Position start */
+            0% {background-color: green;
+            top: 0px; left: 0px;}
+
+            25%{ 
+                background-color: red; top: 0px; left: 200px;
+                
+            }
+             50%{
+                background-color: black; top: 2oopx; left: 200px; 
+             }
+             75%{
+                background-color:palevioletred;
+                top: 200px;
+                right: 200px;
+             }
+            /* Position end  */
+            100% {background-color: violet;
+            top: 0px;left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="ease">ease </div>~
+    <div id="Linear">Linear </div>
+    <div id="ease-in">ease-in </div>
+    <div id="ease-in-out">ease-in-out </div>
+    <p>This is going to Animate</p>
+
+    
+</body>
+</html>

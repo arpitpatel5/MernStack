@@ -1,0 +1,39 @@
+/* Main thing to learn from media queries is that we can customize max and min width( min-width: 100px)
+or else we can do @media ( 400px <= width 700px */
+body{
+    background-color:red
+}
+div{
+    font-size: 50px;
+    text-align: center;
+}
+div::after{
+    content:'Welcome to media qureies'
+}
+
+@media (100px <= width <= 500px ){
+body{
+    background:blue;
+}
+}
+
+@media  (min-width:500px) and (max-width:700px) {
+    /* If viewport is atleast 900px then this style will apply */
+    body{
+        background:#0808;
+    }
+    div::after{
+        content:'New design' 
+    }
+    
+}
+
+ @media  (min-width:700px){
+    body{
+        background-color: aquamarine;
+    }
+    div::after{
+        content:'Aquamarine color'
+    }
+    
+ }

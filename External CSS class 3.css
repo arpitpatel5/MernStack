@@ -1,0 +1,15 @@
+
+body{
+    background-color: yellowgreen;
+} */
+.heading{
+    color: black;
+    font: 100px;
+    text-align: center;
+    text-decoration: underline;
+}
+.para{
+    color: blueviolet;
+    backdrop-filter: black;
+    font-size: xx-large;
+}

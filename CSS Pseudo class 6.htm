@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 1- Hover class*/
+        .hovertest:hover{
+            background-color: blue;
+            color: black;
+            
+        }
+        /* 2- Focus class*/
+        input:focus{
+            color: black;
+            background-color: rgb(1, 86, 243);
+            font-size: 25px;
+        }
+        a:hover{ 
+            color: rgb(227, 24, 57);
+        }
+
+        /* 3- Active (Link) */
+        a:active{
+            color: lightskyblue;
+        }
+
+        /* 4- Visited (Link) */
+        a:visited{
+            color: green;
+        }
+
+        /* First_child */
+        a:nth-child(odd)/* 2n+1, 5n+1 */ {
+            color: blue;
+        }
+
+    </style>
+    <title>CSS Pseudo Class</title>
+</head>
+<body>
+    <!-- Pseudo Class -->
+    
+    <!-- 1- Hover -->
+    <p class="hovertest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sint?</p>
+
+    <!-- 2- Focus -->
+    <input type="text"> <br>
+    <nav>
+        <a href="https://www.youtube.com/@uniteflyers/about">Uniteflyers</a>
+        <a href="https://www.youtube.com/@uniteflyers/about">Uniteflyers</a>
+        <a href="https://www.youtube.com/@uniteflyers/about">Uniteflyers</a>
+        <a href="https://www.youtube.com/@uniteflyers/about">Uniteflyers</a>
+    </nav>
+</body>
+</html>

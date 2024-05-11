@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position | layout class</title>
+    <!-- 1. Sticky
+         2. Relative
+         3. Absolute
+         4. Fixed -->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: aqua;
+            border: 2px solid black;
+            position: fixed;
+            top: 0px;
+            
+        }
+        .box2{
+            background-color: blueviolet;
+           border:  2px solid black;
+           position: absolute; /* absolute position work from its parent position.*/
+           top: 50px;
+        }
+        .box3{
+            background-color: brown;
+            border: 2px solid black;
+            position: relative; /* Relative : refers to the current position that is previous position*/
+            top: 20px;
+            left: 10px;
+        }
+        .box4{
+            background-color: red;
+            border: 2px solid black;
+            position: sticky; /* sticky position property will work as a sticky element on web page and it doesn't change its position. */
+            top: 1px;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Top, Bottom, Right, Left -->
+    <!-- Properties:- Static, Sticky, Fixed, Relative(change from current pos) and Absolute -->
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea atque expedita molestiae asperiores facilis explicabo iste ipsam in, nobis consectetur quo culpa vitae quos sed ut excepturi quae voluptates laborum veritatis, velit quidem, cumiure ut ratione deserunt! Aspernatur optio voluptate ipsam repudiandae a quis voluptas veniam. Vitae nihil deserunt totam, enim tempora sapiente perferendis ipsa necessitatibus tempore nulla quibusdam nisi sit cum voluptatum asperiores porro a unde aspernatur. Illum voluptatem quod laboriosam possimus eum, perspiciatis aperiam ullam odio quas mollitia obcaecati quo illo perferendis? Saepe quia dolorem eaque veritatis omnis ullam vel eveniet beatae iure. Magnam eos porro quibusdam iusto accusamus.</p>
+    </div>
+    
+</body>
+</html>
+

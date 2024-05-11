@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Forms are basically used to get inputs from users and collect some data or fill survey! -->
+<form 
+method="get"  action="HTML forms.html"> 
+    <fieldset>
+        <legend>User Info!!</legend>
+    <!--for that first we need to type in action the given file name where we want to show the outputs-->
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="username"> 
+    <!--input allows us to write text in the box-->
+    <br>
+    <br>
+<label for="mail">Enter your mail:</label>
+    <textarea id="mail" cols="20" rows="1" name="usermail"></textarea> <!--Textarea is tag through which we can write multiple lines with other extra features like : cols, rows and IDs -->
+    <br>
+    <br>
+    <label for="dob">DOB</label>
+    <input type="date" name="userdob" id="dob">
+<br>
+<br>
+<label for="password">Enter your password</label>
+<input type="password" id="password" name="userpassword">
+<br>
+Select Gender:
+<br>
+<label for="Male">Male</label>
+<input type="radio" id="Male" name="Gender">
+<br>
+<label for="Female">Femal</label>
+<input type="radio" id="Female" name="Gender">
+<br>
+<label for="Trans">Trans</label>
+<input type="radio" id="Trans" name="Gender">
+<br>
+<br>
+<em>Select your favourite IT career:
+</em> <br>
+<label for="Fullstack Developer">Fullstack</label>
+<input type="checkbox" id="Fullstack" name="career" >
+<br>
+<label for="Data Science">Data Science</label>
+<input type="checkbox"id="Data Science" name="career">
+<br>
+<label for="Consultant">Consultant</label>
+<input type="checkbox"id="Consultant" name="career">
+<br>
+<br>
+<label for="submit"><em>Submit form</em></label>
+<input type="submit">
+<input type="reset">
+<input type="search">
+</fieldset>
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!-- Emmet are plugins that are used to code fast
+It provide us abbreviation into HTML, XML and other code structures -->
+<!-- for using emment we can simply press ctrl + forword slash -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      p{
+        color: hwb(90 0% 0% / 0.661);
+      } 
+      body{
+        background-color: black;
+      }
+    </style>
+    <title>emmet</title>
+</head>
+<body>
+<!-- Adding attributes -->
+  <p class="class">Lorem ipsum dolor sit amet consectetur adipisicing.</p> <!--for adding class through emmet use (.class)-->   
+  <p id="ID">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <!--for adding ID through emmet use (#ID)-->
+   <div class="container black" id="mail"> </div> <!--also can add multiple class and ID simultaneously (div.container.black#ID) -->
+
+   <!-- Custom Attributes -->
+<p class="learning">I'll learn anyway</p> <!--element[attributes="custom title"]-->
+<!--Adding text  -->
+<P>Billionaire Arpit</P>
+ <!--Parents-child (div>ul>li)-->
+ <div>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+ </div>
+ <!-- one more example for Parent child with classes and ID ( div.class>p.classp>p#ID>li*2) -->
+ <div class="class">
+  <p class="classp">
+    <p id="ID">
+      <li></li>
+      <li></li>
+    </p>
+  </p>
+ </div>
+ <!-- Adding Siblings (div>p+p) -->
+ <div>
+  <p></p>
+  <p></p>
+ </div>
+ <!-- Multiplication (ul>li*5) -->
+ <ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+<!-- Grouping [div>nav>ul>li*2>a)+footer>p] -->
+<div>
+  <nav>
+    <ul>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </nav>
+  <footer>
+    <p></p>
+  </footer>
+</div>
+</html>
+

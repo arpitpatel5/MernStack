@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- Tables -->
+    <!-- (table>tr>th>td) -->
+    <!-- Border will give outline to table and cellpadding and cellspacing will give line spaces  -->
+    <table border cellpadding="15px" cellspacing="5px" >
+        <tr> <!--Table row-->
+            <th>Sr no.</th>   <!--Table heading-->
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+            <th>Subject 3</th>
+        </tr>
+        <tr>
+            <th>1</th> <!--Table data-->
+            <td>English</td>
+            <td colspan="2">Maths</td> <!--to strech the same coloumn we use (colspan="2")-->
+            
+            
+        </tr>
+        <tr>
+            <th>2</th> <!--Table data-->
+            <td>English</td>
+            <td>Maths</td>
+            <td rowspan="2">Science</td>
+            <!-- rowspan will combine rows -->
+            
+        </tr>
+        <tr>
+            <th>3</th> <!--Table data-->
+            <td>English</td>
+            <td>Maths</td>
+            
+            
+        </tr>
+    </table>
+</body>
+</html>

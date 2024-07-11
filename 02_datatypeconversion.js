@@ -1,4 +1,4 @@
-/*
+
 
 // typeof in js
 let score = 33
@@ -30,4 +30,3 @@ let willSoonRule = Boolean(willRule) // >- conver to string to bool
 console.log(  typeof willSoonRule); // >- Boolean
 console.log(willSoonRule); // >- true 
 
-*/
